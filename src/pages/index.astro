@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
+import Maletin from "../components/Maletin.astro"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -8,8 +9,8 @@ import Badge from "../components/Badge.astro";
 
 <Layout title="Porfolio devMarco">
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+    <section class="w-[90%] lg:w-[760px] mt-20">
+      <h1 class="text-white text-5xl  font-bold flex flex-row items-center gap-x-2 py-3">
         Hey, soy devMarco <a
           href="https://linkedin.com/in/dev-marco-urrutia"
           title="Mi Linkedin"
@@ -20,11 +21,13 @@ import Badge from "../components/Badge.astro";
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2 class="text-xl opacity-80">
-        Soy un desarrollador Full-Stack siempre buscando aprender y ampliar mis
-        habilidades de programación. Disfruto trabajando en proyectos que me
-        ayudan a crecer y profundizar mi comprensión del desarrollo web.
+      <h2 class="text-xl opacity-80 py-5">
+        🌟 Apasionado por el desarrollo web, enfocado en calidad e innovación. Siempre buscando llevar los proyectos a nuevas órbitas 🚀.
       </h2>
+    </section>
+    <hr class="my-10 opacity-30"/>
+    <section class="w-[90%] lg:w-[760px]">
+      <h1 class="text-white text-xl  font-bold flex gap-x-2">Experiencia <Maletin /></h1>
     </section>
   </main>
 </Layout>
