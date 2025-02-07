@@ -3,12 +3,29 @@
 ---
 
 <header
-  class="flex justify-center items-center p-3 w-full lg:w-[1120px] mx-auto"
+  id="navbar"
+  class="bg-white/2 fixed flex justify-center items-center p-3 w-full mx-auto border-b border-white/2 transition-all duration-500 z-50"
 >
   <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="/">Inicio</a>
-    <a href="/acerca">Sobre Mi</a>
-    <a href="/proyectos">Proyectos</a>
-    <a href="/contacto">Contacto</a>
+    <a href="#">Inicio</a>
+    <a href="#sobre-mi">Sobre Mi</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#laboral">Experiencia</a>
   </nav>
 </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+
+    if (!navbar) return;
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("backdrop-blur-md", "shadow-md");
+      } else {
+        navbar.classList.remove("backdrop-blur-md", "shadow-md");
+      }
+    });
+  });
+</script>
