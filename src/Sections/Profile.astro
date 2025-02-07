@@ -6,12 +6,13 @@ import LinkedinIcon from "../Icons/Linkedin.astro";
 import GitHubIcon from "../Icons/GitHub.astro";
 import GmailIcon from "../Icons/Gmail.astro";
 import SendIcon from "../Icons/Send.astro";
+import Tooltip from "../components/Tooltip.astro";
 ---
 
-<section id="sobre-mi" class="w-[90%] lg:w-[760px] mt-20">
+<section id="sobre-mi" class="w-[90%] lg:w-[760px] flex flex-col gap-y-3">
   <div>
     <img
-      class="rounded-full size-20 ring-2 ring-[rgba(102,51,238,0.5)]"
+      class="rounded-full size-24 ring-2 ring-[rgba(102,51,238,0.5)] my-4"
       src={foto.src}
       alt="devMarco Foto"
     />
@@ -48,11 +49,14 @@ import SendIcon from "../Icons/Send.astro";
       </SocialPill>
     </nav>
     <div class="flex gap-x-2">
-      <div class="flex gap-x-2 text-white/80 rounded-full border border-white/10 bg-white/5 py-2 px-4 text-center">
+      <div
+        class="flex gap-x-2 text-white/80 rounded-full border border-white/10 bg-white/5 py-2 px-4 text-center"
+      >
         <GmailIcon class="size-6" />
         <label>m.urrutia1991@gmail.com</label>
       </div>
-      <SocialPill href="mailto:m.urrutia1991@gmail.com" title="Enviar email">
+      <SocialPill href="mailto:m.urrutia1991@gmail.com">
+        <Tooltip />
         <SendIcon class="size-6" />
       </SocialPill>
     </div>
