@@ -7,6 +7,10 @@ import GitHubIcon from "../Icons/GitHub.astro";
 import GmailIcon from "../Icons/Gmail.astro";
 import SendIcon from "../Icons/Send.astro";
 import Tooltip from "../components/Tooltip.astro";
+import CopyIcon from "../Icons/Copy.astro";
+import { copyToClipboard } from "../utils/clipboard";
+
+const email = "m.urrutia1991@gmail.com";
 ---
 
 <section id="sobre-mi" class="w-[90%] lg:w-[760px] flex flex-col gap-y-3">
@@ -55,10 +59,16 @@ import Tooltip from "../components/Tooltip.astro";
         <GmailIcon class="size-6" />
         <label>m.urrutia1991@gmail.com</label>
       </div>
-      <SocialPill href="mailto:m.urrutia1991@gmail.com">
-        <Tooltip />
-        <SendIcon class="size-6" />
-      </SocialPill>
+      <Tooltip text="Enviar email">
+        <SocialPill href="mailto:m.urrutia1991@gmail.com">
+          <SendIcon class="size-6" />
+        </SocialPill>
+      </Tooltip>
+      <Tooltip text="Copiar email">
+        <SocialPill>
+          <CopyIcon class="size-6" />
+        </SocialPill>
+      </Tooltip>
     </div>
   </div>
 </section>
