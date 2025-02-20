@@ -10,20 +10,21 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="w-full h-full">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <div
-    class="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
-  >
-  </div>
-  <Header />
-  <body>
+  <body class="flex flex-col w-full max-h-screen">
+    <div
+      class="fixed inset-0 -z-10 h-full
+      w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+    >
+    </div>
+    <Header />
     <slot />
   </body>
 
@@ -35,11 +36,6 @@ const { title } = Astro.props;
       font-family: "Onest Variable", system-ui, sans-serif;
       scroll-behavior: smooth;
     }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     section {
       scroll-margin-top: 55px;
     }
@@ -50,6 +46,4 @@ const { title } = Astro.props;
       }
     }
   </style>
-
-
 </html>
