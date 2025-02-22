@@ -5,11 +5,13 @@ import tailwindcss from '@tailwindcss/vite';
 
 import react from '@astrojs/react';
 import alpinejs from '@astrojs/alpinejs';
+import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
 
-  integrations: [react(), alpinejs()]
+  integrations: [react(), alpinejs()],
+  adapter: netlify()
 });

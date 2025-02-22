@@ -11,44 +11,41 @@ import CopyIcon from "../Icons/Copy.astro";
 import { CopyButton } from "../components/CopyButton";
 
 const mail = "m.urrutia1991@gmail.com";
-
-const copiarAlPortapapeles = async () => {
-  try {
-    await navigator.clipboard.writeText(mail);
-    alert("Correo copiado al portapapeles");
-  } catch (err) {
-    console.error("Error al copiar:", err);
-  }
-};
 ---
 
-<section id="sobre-mi" class="flex flex-col gap-y-3 items-center w-full">
-  <div>
+<section
+  id="sobre-mi"
+  class="flex flex-col gap-y-3 px-6 items-center w-full my-10"
+>
+  <div class="w-full">
     <img
       class="rounded-full size-24 ring-2 ring-[rgba(102,51,238,0.5)] my-4"
       src={foto.src}
       alt="devMarco Foto"
     />
-    <h1
-      class="text-white text-5xl font-bold flex flex-row items-center gap-x-2 py-3"
-    >
-      Hey, soy devMarco <a
+    <div class="flex flex-col gap-4 lg:flex-row">
+      <h1
+        class="text-white text-4xl lg:text-5xl font-bold flex justify-between w-full items-center"
+      >
+        Hey, soy devMarco
+      </h1>
+      <a
         href="https://linkedin.com/in/dev-marco-urrutia"
         title="Mi Linkedin"
         target="_blank"
         rel="noopener"
-        class="flex justify-center items-center"
+        class="flex items-center"
       >
         <Badge>Disponible para trabajar</Badge>
       </a>
-    </h1>
+    </div>
   </div>
   <h2 class="text-xl opacity-80 py-5">
     🌟 Apasionado por el desarrollo web, enfocado en calidad e innovación.
     Siempre buscando llevar los proyectos a nuevas órbitas 🚀.
   </h2>
-  <div class="flex justify-between items-center">
-    <nav class="flex gap-x-4 items-center">
+  <div class="flex flex-col lg:flex-row justify-between gap-y-4 w-full">
+    <nav class="flex gap-x-2">
       <SocialPill
         href="https://www.linkedin.com/in/dev-marco-urrutia"
         title="Linkedin"
@@ -61,9 +58,9 @@ const copiarAlPortapapeles = async () => {
         GitHub
       </SocialPill>
     </nav>
-    <div class="flex gap-x-2">
+    <div class="flex gap-x-2 w-full justify-between lg:w-fit">
       <div
-        class="flex gap-x-2 text-white/80 rounded-full border border-white/10 bg-white/5 py-2 px-4 text-center"
+        class="flex gap-x-2 text-white/80 rounded-full border border-white/10 bg-white/5 py-2 px-4"
       >
         <GmailIcon class="size-6" />
         <label>{mail}</label>
