@@ -1,0 +1,26 @@
+---
+import ProjectItem from "../components/ProjectItem.astro";
+import ProjectsIcon from "../Icons/ProjectsIcon.astro";
+---
+
+<section id="estudios" class="px-6">
+  <h1
+    class="text-white text-2xl font-semibold flex items-center gap-x-2 py-5 my-3"
+  >
+    Proyectos <ProjectsIcon class="size-8" />
+  </h1>
+  <ul class="list-none space-y-6">
+    <ProjectItem
+    image="/assets/starwarsBlogBG.webp"
+    alt="StarWars Guide"
+    title="StarWars Guide"
+    description="Proyecto desarrollado en 4GeeksAcademy"
+    repo="https://github.com/marcourrutia/starwars-blog"
+    demo="https://marcourrutia.github.io/starwars-blog/"
+    tech={[
+        { name: "React", icon: "src/Icons/React.svg" },
+        { name: "CSS", icon: "src/Icons/CSS.svg" },
+    ]}
+    />
+  </ul>
+</section>
