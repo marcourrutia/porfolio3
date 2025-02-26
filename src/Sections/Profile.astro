@@ -65,16 +65,16 @@ const mail = "m.urrutia1991@gmail.com";
         <GmailIcon class="size-6" />
         <label>{mail}</label>
       </div>
-      <Tooltip text="Enviar email">
-        <SocialPill href={`mailto:${mail}`}>
+      <SocialPill href={`mailto:${mail}`}>
+        <Tooltip text="Enviar email">
           <SendIcon class="size-6" />
-        </SocialPill>
-      </Tooltip>
-      <Tooltip text="Copiar email">
-        <CopyButton mail={mail} client:load>
+        </Tooltip>
+      </SocialPill>
+      <CopyButton mail={mail} client:load>
+        <Tooltip text="Copiar email">
           <CopyIcon />
-        </CopyButton>
-      </Tooltip>
+        </Tooltip>
+      </CopyButton>
     </div>
   </div>
 </section>

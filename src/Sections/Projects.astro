@@ -3,24 +3,37 @@ import ProjectItem from "../components/ProjectItem.astro";
 import ProjectsIcon from "../Icons/ProjectsIcon.astro";
 ---
 
-<section id="estudios" class="px-6">
+<section id="proyectos" class="px-6">
   <h1
     class="text-white text-2xl font-semibold flex items-center gap-x-2 py-5 my-3"
   >
     Proyectos <ProjectsIcon class="size-8" />
   </h1>
-  <ul class="list-none space-y-6">
+  <div class="flex flex-col gap-8">
     <ProjectItem
-    image="/assets/starwarsBlogBG.webp"
-    alt="StarWars Guide"
-    title="StarWars Guide"
-    description="Proyecto desarrollado en 4GeeksAcademy"
-    repo="https://github.com/marcourrutia/starwars-blog"
-    demo="https://marcourrutia.github.io/starwars-blog/"
-    tech={[
+      image="/assets/starwarsBlogBG.webp"
+      alt="Star Wars Guide image"
+      title="Star Wars Guide"
+      description="Un sitio web que consume la API de STAR WARS DATABANK para ofrecer una guía rápida del universo de Star Wars. "
+      repo="https://github.com/marcourrutia/starwars-blog"
+      demo="https://marcourrutia.github.io/starwars-blog/"
+      tech={[
         { name: "React", icon: "src/Icons/React.svg" },
         { name: "CSS", icon: "src/Icons/CSS.svg" },
-    ]}
+      ]}
     />
-  </ul>
+    <ProjectItem
+      image="/assets/batallaNavalBG.webp"
+      alt="Battleship image"
+      title="Batalla Naval"
+      description="Revive el clásico juego de Batalla Naval. Enfréntate a la computadora y planea tu estrategia para localizar y hundir su flota antes de que destruya la tuya."
+      repo="https://github.com/marcourrutia/BattleShip"
+      demo="https://battle-ship-gules-zeta.vercel.app/"
+      tech={[
+        { name: "React", icon: "src/Icons/React.svg" },
+        { name: "CSS", icon: "src/Icons/CSS.svg" },
+        { name: "Tailwind", icon: "src/Icons/Tailwind.svg" },
+      ]}
+    />
+  </div>
 </section>
