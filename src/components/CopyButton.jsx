@@ -20,7 +20,7 @@ export const CopyButton = ({ mail, children }) => {
   return (
     <div>
       <button
-        className="text-white/80 rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 cursor-pointer transition active:scale-95 relative"
+        className="text-white/80 flex justify-center items-center hover:scale-110 cursor-pointer transition active:scale-95 relative"
         onClick={copiarAlPortapapeles}
       >
         {children}
