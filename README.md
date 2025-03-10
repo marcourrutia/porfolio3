@@ -28,20 +28,21 @@ git clone https://github.com/marcourrutia/porfolio3.git
 cd porfolio3
 ```
 ### 2️⃣ Instalar dependencias
-# Si usas Bun (recomendado)
+### Si usas Bun (recomendado)
 ```sh
 bun install
 ```
-# O si prefieres npm
+### O si prefieres npm
 ```sh
 npm install
 ```
 ### 3️⃣ Ejecutar en modo desarrollo
-# Con Bun
+### Con Bun
 ```sh
 bun dev
 ```
-# Con npm
+### Con npm
 ```sh
 npm run dev
 ```
+### Gracias por visitar mi repo!. 🚀🔥
