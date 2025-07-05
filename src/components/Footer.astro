@@ -1,3 +1,28 @@
-<section class="py-10">
-    <h1>WEB desarrollada con Astro. Footer en construcción...</h1>
+---
+import GitHub from "../Icons/GitHub.astro";
+import Linkedin from "../Icons/Linkedin.astro";
+---
+
+<section class="py-15 flex justify-between w-full">
+  <h2 class="text-xs opacity-70">2025 devMarco</h2>
+  <div class="flex gap-x-4">
+    <h1>Sigueme en...</h1>
+    <a
+      href="https://www.linkedin.com/in/dev-marco-urrutia/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="transition-transform hover:scale-115"
+    >
+      <Linkedin class="size-6" />
+    </a>
+    <a
+      href="https://github.com/marcourrutia"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="transition-transform hover:scale-115"
+    >
+      <GitHub class="size-6" />
+    </a>
+  </div>
+  <h2 class="text-xs opacity-70">Sitio creado con Astro</h2>
 </section>
